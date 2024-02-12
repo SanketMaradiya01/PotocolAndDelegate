@@ -62,7 +62,7 @@ class ViewController: UIViewController, DataPass {
         
     }
     @objc func buttonPressed() {
-        var vc = SecondViewController()
+        var vc = FillViewController()
         vc.delegate = self
         self.navigationController?.pushViewController(vc, animated: true)
         print("Fill Btn Pressed")
