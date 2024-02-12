@@ -77,6 +77,6 @@ extension SecondViewController: UITextFieldDelegate {
     @objc func SaveBtnPassed() {
         print("Btn Pressed")
         self.navigationController?.popViewController(animated: true)
-        delegate.datapass(UserName: UserNameTF.text!, Password: PasswordTF.text!)
+        delegate.datapass(UserName: UserNameTF.text!.isEmpty ? "Hello" : UserNameTF.text! , Password: PasswordTF.text!.isEmpty ? "World" : PasswordTF.text!)
         }
 }
